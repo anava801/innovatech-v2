@@ -1,0 +1,842 @@
+body.page-template-template-innovation{
+	sup{
+		vertical-align: revert;
+		font-size: 1rem;
+	}
+
+	section#heading{
+		.inner{
+			width: 100%;
+			max-width: 1156px;
+			margin: 0 auto;
+			padding: 45px 0 30px;
+			
+			h1{
+				float: left;
+				color: $innova-black;
+				font: 700 3.6rem 'Rajdhani';
+				line-height: 32px;
+				margin: 0;
+				padding: 0;
+				text-transform: uppercase;
+			}
+
+			ul{
+				float: left;
+				@include ul-inline;
+				margin-top: 10px;
+				margin-left: 20px;
+				li{
+					margin-left: 25px;
+					a{
+						color: $dark-gold;
+						font: 600 1.6rem 'Rajdhani';
+						text-decoration: none;
+
+						&:hover{
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+
+			.btn{
+				float: right;
+				margin: 0;
+			}
+		}
+	}
+
+	section.intro{
+		background-color: $soft-grey;
+
+		.inner{
+			max-width: 1156px;
+			padding: 40px 0;
+
+			.text{
+				float: left;
+				max-width: 550px;
+				color: $innova-black;
+				font: 500 1.8rem 'Inter';
+				p{
+					margin: 0;
+				}
+			}
+
+			.slider-nav{
+				ul{
+					@include ul-float;
+					float: right;
+					li{
+						margin-left: 10px;
+						a{
+							display: block;
+							padding: 5px 10px;
+							border: solid 1px #000;
+							color: $innova-black;
+							font: 700 1.6rem 'Rajdhani';
+							background-color: #fff;
+							text-decoration: none;
+
+							&:hover, &.active{
+								background-color: $innova-black;
+								color: #fff;
+							}
+						}
+					}
+				}
+				.interactive{
+					float: right;
+					margin-left: 10px;
+					display: block;
+					padding: 6px 15px;
+					color: #fff;
+					font: 600 1.6rem 'Rajdhani';
+					background-color: $gold;
+					text-decoration: none;
+					text-transform: uppercase;
+
+					&:hover, &.active{
+						background-color: $innova-black;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+
+	section#slider{
+		padding: 0;
+		background-color: #000;
+		.inner{
+			padding: 0;
+			max-width: 1366px;
+		}
+	}
+
+	section#casestudy{
+		background-color: $soft-grey;
+		.inner{
+			max-width: 889px;
+			padding: 40px 0 60px;
+
+			.col{
+				float: left;
+				width:46%;
+
+				&:first-child{
+					margin-right: 4%;
+				}
+				&:last-child{
+					margin-left: 4%;
+				}
+
+				h3{
+					color: $innova-black;
+					font: 700 2.2rem 'Rajdhani';
+					padding: 0;
+					margin: 20px 0 10px 0;
+				}
+			}
+		}
+	}
+
+	section#quote{
+		background-color: #565656;
+		.inner{
+			max-width: 1220px;
+			padding: 60px 0 80px;
+
+			.img{
+				width: 32%;
+				max-width: 368px;
+				margin-right: 5%;
+				float: left;
+				img{
+					width: 100%;
+				}
+			}
+			.quote{
+				width: 62%;
+				float: right;
+
+				p{
+					color: #fff;
+					font: 500 4rem 'Rajdhani';
+					line-height: 48px;
+					margin: 0 0 40px 0;
+					padding: 0;
+				}
+
+				.person{
+					color: #fff;
+					font: 400 1.6rem 'Inter';
+
+					strong{
+						font: 700 1.8rem 'Inter';
+						display: block;
+					}
+				}
+			}
+		}
+	}
+
+	/* section#relatedX{
+		padding: 50px 150px;
+		@include clear;
+
+		h2{
+			color: $innova-black;
+			margin-bottom: 50px;
+		}
+
+		.pannel{
+			padding: 1rem;
+			position: relative;
+			padding: 4px;
+			margin-bottom: 25px;
+
+			&.lr{
+				background: linear-gradient(to right, #CA992C 2%, #fff 95%);
+			}
+			&.rl{
+				background: linear-gradient(to right, #fff 2%, #CA992C 95%);
+			}
+
+			.panne-inner{
+				background-color: #fff;
+				padding: 40px 30px;
+				@include clear;
+				
+				.col-text{
+					float: left;
+					width: 50%;
+					padding: 60px 120px 60px 80px;
+			
+					h3{
+						color: $innova-black;
+						font: 700 2.4rem 'rajdhani';
+						line-height: 28px;
+						margin: 0px;
+						padding: 0 0 7px 0;
+					}
+			
+					p{
+						color: $innova-black;
+						font: 400 1.6rem 'inter';
+						line-height: 22px;
+						margin: 0;
+						padding: 0;
+					}
+				}
+			
+				.col-img{
+					float: left;
+					width: 50%;
+					img{
+						width: 100%;
+					}
+				}
+			}
+		}
+	} */
+
+	section#related{
+		padding: 50px 5%;
+		background-color: #fff;
+		@include clear;
+
+		.inner{
+			width: 100%;
+			max-width: 1220px;
+		}
+
+		h2{
+			color: $innova-black;
+			margin-bottom: 50px;
+		}
+
+		.pannel{
+			padding: 1rem;
+			position: relative;
+			padding: 4px;
+			margin-bottom: 25px;
+
+			&.lr{
+				background: linear-gradient(to right, #CA992C 2%, #fff 95%);
+			}
+			&.rl{
+				background: linear-gradient(to right, #fff 2%, #CA992C 95%);
+			}
+
+			.panne-inner{
+				background-color: #fff;
+				padding: 40px 30px;
+				@include clear;
+				
+				.col-text{
+					float: left;
+					width: 50%;
+					padding: 5% 11% 5% 5%;
+			
+					h3{
+						color: $innova-black;
+						font: 700 2.4rem 'rajdhani';
+						line-height: 28px;
+						margin: 0px;
+						padding: 0 0 7px 0;
+					}
+			
+					p{
+						color: $innova-black;
+						font: 400 1.6rem 'inter';
+						line-height: 22px;
+						margin: 0;
+						padding: 0;
+					}
+				}
+			
+				.col-img{
+					float: left;
+					width: 50%;
+					img{
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 900px){
+	body.page-template-template-innovation{
+		section#heading{
+			.inner{
+				// width: 100%;
+				// max-width: 1086px;
+				// margin: 0 auto;
+				// padding: 45px 0 30px;
+				
+				// h1{
+				// 	float: left;
+				// 	color: $innova-black;
+				// 	font: 700 3.6rem 'Rajdhani';
+				// 	line-height: 32px;
+				// 	margin: 0;
+				// 	padding: 0;
+				// 	text-transform: uppercase;
+				// }
+	
+				ul{
+					float: none;
+					clear: both;
+					margin-left: 0;
+					padding-top: 10px;
+					
+					// li{
+					// 	margin-left: 25px;
+					// 	a{
+					// 		color: $dark-gold;
+					// 		font: 600 1.6rem 'Rajdhani';
+					// 		text-decoration: none;
+	
+					// 		&:hover{
+					// 			text-decoration: underline;
+					// 		}
+					// 	}
+					// }
+					li:first-child{
+						margin-left: 0;
+					}
+				}
+	
+				.btn{
+					float: none;
+					margin-top: 10px;
+				}
+			}
+		}
+
+		section.intro{
+			// background-color: $soft-grey;
+	
+			.inner{
+				// max-width: 1086px;
+				// padding: 40px 0;
+	
+				.text{
+					float: none;
+				// 	max-width: 550px;
+				// 	color: $innova-black;
+				// 	font: 500 1.8rem 'Inter';
+				// 	p{
+				// 		margin: 0;
+				// 	}
+				}
+	
+				.slider-nav{
+					@include clear;
+					margin-top: 15px;
+					
+					ul{
+						// @include ul-float;
+						// clear: both;
+						float: left;
+						// margin-top: 10px;
+						// padding-top: 10px;
+
+						// li:first-child{
+						// 	margin-left: 0;
+						// }
+
+						// li{
+						// 	margin-left: 10px;
+						// 	a{
+						// 		display: block;
+						// 		padding: 5px 10px;
+						// 		border: solid 1px #000;
+						// 		color: $innova-black;
+						// 		font: 700 1.6rem 'Rajdhani';
+						// 		background-color: #fff;
+						// 		text-decoration: none;
+	
+						// 		&:hover, &.active{
+						// 			background-color: $innova-black;
+						// 			color: #fff;
+						// 		}
+						// 	}
+						// }
+
+						li:first-child{
+							margin-left: 0;
+						}
+					}
+					
+					// .interactive{
+					// 	float: right;
+					// 	margin-left: 10px;
+					// 	display: block;
+					// 	padding: 6px 15px;
+					// 	color: #fff;
+					// 	font: 600 1.6rem 'Rajdhani';
+					// 	background-color: $gold;
+					// 	text-decoration: none;
+					// 	text-transform: uppercase;
+	
+					// 	&:hover, &.active{
+					// 		background-color: $innova-black;
+					// 		color: #fff;
+					// 	}
+					// }
+				}
+			}
+		}
+	
+		// section#casestudy{
+		// 	background-color: $soft-grey;
+		// 	.inner{
+		// 		max-width: 889px;
+		// 		padding: 40px 0 60px;
+	
+		// 		.col{
+		// 			float: left;
+		// 			width:46%;
+	
+		// 			&:first-child{
+		// 				margin-right: 4%;
+		// 			}
+		// 			&:last-child{
+		// 				margin-left: 4%;
+		// 			}
+	
+		// 			h3{
+		// 				color: $innova-black;
+		// 				font: 700 2.2rem 'Rajdhani';
+		// 				padding: 0;
+		// 				margin: 20px 0 10px 0;
+		// 			}
+		// 		}
+		// 	}
+		// }
+	
+		// section#quote{
+		// 	background-color: #565656;
+		// 	.inner{
+		// 		max-width: 1144px;
+		// 		padding: 60px 0 80px;
+	
+		// 		.img{
+		// 			width: 32%;
+		// 			max-width: 368px;
+		// 			float: left;
+		// 			img{
+		// 				width: 100%;
+		// 			}
+		// 		}
+		// 		.quote{
+		// 			width: 63%;
+		// 			float: right;
+	
+		// 			p{
+		// 				color: #fff;
+		// 				font: 500 4rem 'Rajdhani';
+		// 				line-height: 48px;
+		// 				margin: 0 0 40px 0;
+		// 				padding: 0;
+		// 			}
+	
+		// 			.person{
+		// 				color: #fff;
+		// 				font: 400 1.6rem 'Inter';
+	
+		// 				strong{
+		// 					font: 700 1.8rem 'Inter';
+		// 					display: block;
+		// 				}
+		// 			}
+		// 		}
+		// 	}
+		// }
+	
+		// section#related{
+		// 	padding: 50px 150px;
+		// 	@include clear;
+	
+		// 	h2{
+		// 		color: $innova-black;
+		// 		margin-bottom: 50px;
+		// 	}
+	
+		// 	.pannel{
+		// 		padding: 1rem;
+		// 		position: relative;
+		// 		padding: 4px;
+		// 		margin-bottom: 25px;
+	
+		// 		&.lr{
+		// 			background: linear-gradient(to right, #CA992C 2%, #fff 95%);
+		// 		}
+		// 		&.rl{
+		// 			background: linear-gradient(to right, #fff 2%, #CA992C 95%);
+		// 		}
+	
+		// 		.panne-inner{
+		// 			background-color: #fff;
+		// 			padding: 40px 30px;
+		// 			@include clear;
+					
+		// 			.col-text{
+		// 				float: left;
+		// 				width: 50%;
+		// 				padding: 60px 120px 60px 80px;
+				
+		// 				h3{
+		// 					color: $innova-black;
+		// 					font: 700 2.4rem 'rajdhani';
+		// 					line-height: 28px;
+		// 					margin: 0px;
+		// 					padding: 0 0 7px 0;
+		// 				}
+				
+		// 				p{
+		// 					color: $innova-black;
+		// 					font: 400 1.6rem 'inter';
+		// 					line-height: 22px;
+		// 					margin: 0;
+		// 					padding: 0;
+		// 				}
+		// 			}
+				
+		// 			.col-img{
+		// 				float: left;
+		// 				width: 50%;
+		// 				img{
+		// 					width: 100%;
+		// 				}
+		// 			}
+		// 		}
+		// 	}
+		// }
+		section#related{
+			.pannel{
+				&.rl{
+					.btn{
+						margin-bottom: 0;
+					}
+				}
+	
+				.panne-inner{
+					padding: 40px 30px;
+					@include clear;
+					
+					.col-text{
+						float: none;
+						width: 100%;
+						padding: 2%;
+					}
+				
+					.col-img{
+						float: none;
+						width: 100%;
+						padding: 2%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 700px){
+	body.page-template-template-innovation{
+		section#heading{
+			.inner{
+				// width: 100%;
+				// max-width: 1086px;
+				// margin: 0 auto;
+				// padding: 45px 0 30px;
+				
+				// h1{
+				// 	float: left;
+				// 	color: $innova-black;
+				// 	font: 700 3.6rem 'Rajdhani';
+				// 	line-height: 32px;
+				// 	margin: 0;
+				// 	padding: 0;
+				// 	text-transform: uppercase;
+				// }
+	
+				ul{
+					float: none;
+					clear: both;
+					margin-left: 0;
+					padding-top: 10px;
+					
+					// li{
+					// 	margin-left: 25px;
+					// 	a{
+					// 		color: $dark-gold;
+					// 		font: 600 1.6rem 'Rajdhani';
+					// 		text-decoration: none;
+	
+					// 		&:hover{
+					// 			text-decoration: underline;
+					// 		}
+					// 	}
+					// }
+					li:first-child{
+						margin-left: 0;
+					}
+				}
+	
+				.btn{
+					float: none;
+					margin-top: 10px;
+				}
+			}
+		}
+
+		section.intro{
+			// background-color: $soft-grey;
+	
+			.inner{
+				// max-width: 1086px;
+				// padding: 40px 0;
+	
+				.text{
+					float: none;
+				// 	max-width: 550px;
+				// 	color: $innova-black;
+				// 	font: 500 1.8rem 'Inter';
+				// 	p{
+				// 		margin: 0;
+				// 	}
+				}
+	
+				.slider-nav{
+					@include clear;
+					margin-top: 15px;
+					
+					ul{
+						// @include ul-float;
+						// clear: both;
+						float: left;
+						// margin-top: 10px;
+						// padding-top: 10px;
+
+						// li:first-child{
+						// 	margin-left: 0;
+						// }
+
+						// li{
+						// 	margin-left: 10px;
+						// 	a{
+						// 		display: block;
+						// 		padding: 5px 10px;
+						// 		border: solid 1px #000;
+						// 		color: $innova-black;
+						// 		font: 700 1.6rem 'Rajdhani';
+						// 		background-color: #fff;
+						// 		text-decoration: none;
+	
+						// 		&:hover, &.active{
+						// 			background-color: $innova-black;
+						// 			color: #fff;
+						// 		}
+						// 	}
+						// }
+
+						li:first-child{
+							margin-left: 0;
+						}
+					}
+					
+					// .interactive{
+					// 	float: right;
+					// 	margin-left: 10px;
+					// 	display: block;
+					// 	padding: 6px 15px;
+					// 	color: #fff;
+					// 	font: 600 1.6rem 'Rajdhani';
+					// 	background-color: $gold;
+					// 	text-decoration: none;
+					// 	text-transform: uppercase;
+	
+					// 	&:hover, &.active{
+					// 		background-color: $innova-black;
+					// 		color: #fff;
+					// 	}
+					// }
+				}
+			}
+		}
+	
+		section#casestudy{
+			// background-color: $soft-grey;
+			.inner{
+				// max-width: 889px;
+				// padding: 40px 0 60px;
+	
+				.col{
+					float: none;
+					width: 100%;
+	
+					&:first-child{
+						margin-right: 0;
+						margin-bottom: 30px;
+					}
+					&:last-child{
+						margin-left: 0;
+					}
+	
+					// h3{
+					// 	color: $innova-black;
+					// 	font: 700 2.2rem 'Rajdhani';
+					// 	padding: 0;
+					// 	margin: 20px 0 10px 0;
+					// }
+				}
+			}
+		}
+	
+		section#quote{
+			// background-color: #565656;
+			.inner{
+				// max-width: 1144px;
+				// padding: 60px 0 80px;
+	
+				.img{
+					width: 100%;
+					max-width: 100%;
+					float: none;
+					// img{
+					// 	width: 100%;
+					// }
+				}
+				.quote{
+					width: 100%;
+					float: none;
+					margin-top: 20px;
+	
+					p{
+						// color: #fff;
+						font: 500 3rem 'Rajdhani';
+						line-height: 40px;
+						margin: 0 0 20px 0;
+						// padding: 0;
+					}
+	
+					// .person{
+					// 	color: #fff;
+					// 	font: 400 1.6rem 'Inter';
+	
+					// 	strong{
+					// 		font: 700 1.8rem 'Inter';
+					// 		display: block;
+					// 	}
+					// }
+				}
+			}
+		}
+	
+		// section#related{
+		// 	padding: 50px 150px;
+		// 	@include clear;
+	
+		// 	h2{
+		// 		color: $innova-black;
+		// 		margin-bottom: 50px;
+		// 	}
+	
+		// 	.pannel{
+		// 		padding: 1rem;
+		// 		position: relative;
+		// 		padding: 4px;
+		// 		margin-bottom: 25px;
+	
+		// 		&.lr{
+		// 			background: linear-gradient(to right, #CA992C 2%, #fff 95%);
+		// 		}
+		// 		&.rl{
+		// 			background: linear-gradient(to right, #fff 2%, #CA992C 95%);
+		// 		}
+	
+		// 		.panne-inner{
+		// 			background-color: #fff;
+		// 			padding: 40px 30px;
+		// 			@include clear;
+					
+		// 			.col-text{
+		// 				float: left;
+		// 				width: 50%;
+		// 				padding: 60px 120px 60px 80px;
+				
+		// 				h3{
+		// 					color: $innova-black;
+		// 					font: 700 2.4rem 'rajdhani';
+		// 					line-height: 28px;
+		// 					margin: 0px;
+		// 					padding: 0 0 7px 0;
+		// 				}
+				
+		// 				p{
+		// 					color: $innova-black;
+		// 					font: 400 1.6rem 'inter';
+		// 					line-height: 22px;
+		// 					margin: 0;
+		// 					padding: 0;
+		// 				}
+		// 			}
+				
+		// 			.col-img{
+		// 				float: left;
+		// 				width: 50%;
+		// 				img{
+		// 					width: 100%;
+		// 				}
+		// 			}
+		// 		}
+		// 	}
+		// }
+	}
+}

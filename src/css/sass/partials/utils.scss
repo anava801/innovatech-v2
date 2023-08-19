@@ -1,0 +1,95 @@
+/**
+ * partials/utils
+ * ---
+ * Utils classes
+ */
+
+
+// clearfix: http://nicolasgallagher.com/micro-clearfix-hack/
+.clear {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+.reset-box {
+  @include reset-box;
+}
+
+.inner{
+	max-width: 1366px;
+	margin: 0 auto;
+	padding: 20px 0;
+	@include clear;
+
+	.gradient-bar{
+		width: 100%;
+		max-width: 190px;
+		height: 5px;
+		
+		&.gold{
+			background: linear-gradient(93.06deg, #CA992C 29.63%, rgba(202, 153, 44, 0) 88.33%);
+		}
+
+		&.white{
+			background: linear-gradient(93.06deg, #fff 29.63%, rgba(202, 153, 44, 0) 88.33%);
+		}
+
+		&.gray{
+			max-width: 100%;
+			background: linear-gradient(93.06deg, #D9D9D9 29.63%, rgba(202, 153, 44, 0) 88.33%);
+		}
+	}
+
+	h2{
+		font-family: 'Rajdhani';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 3.2rem;
+		line-height: 29px;
+		text-transform: uppercase;
+		//padding-left: 2%;
+
+		.gold{
+			font-weight: 700;
+			color: $gold;
+		}
+	}
+
+	a.btn{
+		display: inline-block;
+		text-transform: uppercase;
+		font: 600 1.6rem 'rajdhani';
+		border: solid 1px;
+		padding: 8px 16px;
+		margin: 25px 0;
+		text-decoration: none;
+		transition: all .25s;
+
+		&.no-fill{
+			color: $innova-black;
+			&:hover{
+				background-color: $innova-black;
+				color: #fff;
+			}
+		}
+
+		&.dark-fill{
+			color: #fff;
+			&:hover{
+				background-color: #fff;
+				color: $innova-black;
+			}
+		}
+	}
+}
+
+main{
+	padding-bottom: 130px;
+}

@@ -1,0 +1,539 @@
+body.page-template-template-process{
+	section#heading{
+		background-size: cover;
+		padding: 5.5% 0;
+		h1{
+			text-align: center;
+			color: $med-gold;
+			font: 700 6.4rem 'Rajdhani';
+			line-height: 57px;
+			letter-spacing: 0.06em;
+			margin: 0;
+			padding: 0;
+			text-transform: uppercase;
+		}
+	}
+
+	section.videos{
+		padding: 0;
+
+		.inner{
+			width: 100%;
+			max-width: 1336px;
+			padding: 70px 7% 90px;
+			margin: 0 auto;
+			position: relative;
+			@include clear;
+		}
+
+		.number{
+			color: $dark-gold;
+			font: 600 3.6rem 'Rajdhani';
+			display: inline-block;
+			position: absolute;
+			left: 7%;
+			line-height: 1em;
+		}
+
+		h2{
+			color: $innova-black;
+			font: 700 8rem 'Rajdhani';
+			line-height: 68px;
+			width: 100%;
+			max-width: 530px;
+			margin: 0 0 29px 60px;
+			padding: 0;
+		}
+
+		.gradient-bar{
+			margin-left: 60px;
+			margin-bottom: 25px;
+		}
+
+		p{
+			color: $innova-black;
+			font: 600 1.6rem 'inter';
+			line-height: 22px;
+			margin: 0 0 0 60px;
+		}
+
+		.col1, .col2{
+			float: left;
+			position: relative;
+
+			img{
+				width: 100%;
+				max-width: 630px;
+			}
+		}
+
+		.plus{
+			width: 40px;
+			height: 40px;
+			margin: 60px 0 0 60px;
+		}
+
+		a.gradient-gold{
+			white-space: nowrap;
+			display: inline-block;
+			padding: 14px 20px;
+			font: 700 4rem 'Rajdhani';
+			text-transform: uppercase;
+			color: $gold;
+			position: relative;
+			line-height: 34px;
+			background-color: transparent;
+			border: none;
+			border-left: solid 4px $gold;
+			text-decoration: none;
+			transition: all .2s;
+
+			&:hover{
+				background-color: $gold;
+				color: #fff;
+			}
+
+			&::before, &::after{
+				position: absolute;
+				left: 0;
+				content: ' ';
+				display: block;
+				height: 4px;
+				width: 100%;
+				background: linear-gradient(93.06deg, #CA992C 29.63%, rgba(202, 153, 44, 0) 88.33%);
+			}
+			&::before{
+				top: 0px;
+			}
+			&::after{
+				bottom: 0px;
+			}
+		}
+
+		.pannel1, .pannel2, .panne3{
+			padding: 0 5%;
+		}
+
+		.pannel1{
+			background: url(img/process1-bg.png);
+			background-size: cover;
+
+			.col1{
+				padding-right: 6%;
+				width: 40%;
+			}
+
+			.col2{
+				width: 54%;
+				padding-top: 20px;
+
+				a.gradient-gold{
+					@include center-vertical;
+					left: 0;
+					transform: translateX(-50%);
+				}
+			}
+		}
+
+		.pannel2{
+			background: url(img/process2-bg.png);
+			background-size: cover;
+
+			h2, p{
+				color: #fff;
+			}
+
+			.col1{
+				width: 54%;
+				padding-top: 100px;
+
+				a.gradient-gold{
+					@include center-vertical;
+					left: 50%;
+					transform: translateX(-50%);
+					top: 70px;
+					color: #fff;
+				}
+			}
+
+			.col2{
+				float: right;
+				padding-left: 6%;
+				margin-right: 5%;
+				width: 40%;
+				.number{
+					left: 60px;
+				}
+			}
+
+			.number{
+				color: $med-gold;
+			}
+		}
+
+		.pannel3{
+			background: url(img/process3-bg.png);
+			background-size: cover;
+
+			p{
+				color: #fff;
+			}
+
+			.col1{
+				padding-right: 6%;
+				width: 40%;
+			}
+
+			.col2{
+				width: 54%;
+				padding-top: 20px;
+
+				a.gradient-gold{
+					@include center-vertical;
+					left: 0;
+					transform: translateX(-50%);
+				}
+			}
+
+			.number{
+				color: #fff;
+			}
+
+			a.gradient-gold{
+				color: #fff;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1100px){
+	body.page-template-template-process{
+		section#heading{
+			background-size: cover;
+			padding: 5.5% 0;
+			h1{
+				text-align: center;
+				color: $med-gold;
+				font: 700 6.4rem 'Rajdhani';
+				line-height: 57px;
+				letter-spacing: 0.06em;
+				margin: 0;
+				padding: 0;
+				text-transform: uppercase;
+			}
+		}
+	
+		section.videos{
+			.inner{
+				width: 100%;
+				max-width: 1150px;
+				padding: 70px 7% 90px;
+				margin: 0 auto;
+				position: relative;
+				@include clear;
+			}
+	
+			.number{
+				color: $dark-gold;
+				font: 600 3.6rem 'Rajdhani';
+				display: inline-block;
+				position: absolute;
+				left: 7%;
+			}
+	
+			h2{
+				//color: $innova-black;
+				font: 700 6rem 'Rajdhani';
+				line-height: 55px;
+				// width: 100%;
+				// max-width: 530px;
+				// margin: 0 0 29px 60px;
+				// padding: 0;
+			}
+	
+			// .gradient-bar{
+			// 	margin-left: 60px;
+			// 	margin-bottom: 25px;
+			// }
+	
+			p{
+				//color: $innova-black;
+				// font: 600 1.6rem 'inter';
+				// line-height: 22px;
+				// margin: 0 0 0 60px;
+			}
+	
+			// .col1, .col2{
+			// 	float: left;
+			// 	position: relative;
+	
+			// 	img{
+			// 		width: 100%;
+			// 		max-width: 630px;
+			// 	}
+			// }
+	
+			// .plus{
+			// 	width: 40px;
+			// 	height: 40px;
+			// 	margin: 60px 0 0 60px;
+			// }
+	
+			a.gradient-gold{
+				// display: inline-block;
+				// padding: 14px 20px;
+				font: 700 3rem 'Rajdhani';
+				// text-transform: uppercase;
+				// color: $gold;
+				// position: relative;
+				// line-height: 34px;
+				// background-color: #fff;
+				// border: none;
+				// border-left: solid 4px $gold;
+				// text-decoration: none;
+				// transition: all .2s;
+	
+				// &:hover{
+				// 	background-color: $gold;
+				// 	color: #fff;
+				// }
+	
+				// &::before, &::after{
+				// 	position: absolute;
+				// 	left: 0;
+				// 	content: ' ';
+				// 	display: block;
+				// 	height: 4px;
+				// 	width: 100%;
+				// 	background: linear-gradient(93.06deg, #CA992C 29.63%, rgba(202, 153, 44, 0) 88.33%);
+				// }
+				// &::before{
+				// 	top: 0px;
+				// }
+				// &::after{
+				// 	bottom: 0px;
+				// }
+			}
+	
+			.pannel1{
+				// background: url(img/process1-bg.png);
+				// background-size: cover;
+	
+				.col1{
+					padding-right: 6%;
+					width: 40%;
+				}
+	
+				.col2{
+					width: 54%;
+					padding-top: 20px;
+	
+					a.gradient-gold{
+						left: 50%;
+						top: -15px;
+					}
+				}
+			}
+	
+			.pannel2{
+				// background: url(img/process2-bg.png);
+				// background-size: cover;
+	
+				// h2, p{
+				// 	color: #fff;
+				// }
+	
+				.col1{
+					width: 50%;
+					padding-top: 100px;
+	
+					a.gradient-gold{
+						@include center-vertical;
+						left: 50%;
+						transform: translateX(-50%);
+						top: 70px;
+						color: #fff;
+					}
+				}
+	
+				.col2{
+					// float: right;
+					// padding-left: 6%;
+					// margin-right: 5%;
+					width: 45%;
+					// .number{
+					// 	left: 60px;
+					// }
+				}
+	
+				// .number{
+				// 	color: $med-gold;
+				// }
+			}
+	
+			.pannel3{
+				// background: url(img/process3-bg.png);
+				// background-size: cover;
+	
+				// p{
+				// 	color: #fff;
+				// }
+	
+				// .col1{
+				// 	padding-right: 6%;
+				// 	width: 40%;
+				// }
+	
+				.col2{
+					width: 54%;
+					padding-top: 20px;
+	
+					a.gradient-gold{
+						@include center-vertical;
+						left: 50%;
+						transform: translateX(-50%);
+						top: -15px;
+					}
+				}
+	
+				// .number{
+				// 	color: #fff;
+				// }
+	
+				// a.gradient-gold{
+				// 	color: #fff;
+				// }
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 700px){
+	body.page-template-template-process{
+		section#heading{
+			h1{
+				font: 700 3.5rem 'Rajdhani';
+			}
+		}
+	
+		section.videos{
+			.inner{
+				width: 100%;
+				max-width: 1150px;
+				padding: 10% 7% 10%;
+				margin: 0 auto;
+				position: relative;
+				@include clear;
+			}
+	
+			.number{
+				color: $dark-gold;
+				font: 600 3.6rem 'Rajdhani';
+				display: inline-block;
+				position: absolute;
+				left: 7%;
+			}
+	
+			h2{
+				//color: $innova-black;
+				font: 700 3.8rem 'Rajdhani';
+				line-height: 35px;
+				// width: 100%;
+				// max-width: 530px;
+				// margin: 0 0 29px 60px;
+				// padding: 0;
+			}
+	
+			.gradient-bar{
+				// margin-left: 60px;
+				margin-bottom: 15px;
+			}
+	
+			p{
+				//color: $innova-black;
+				// font: 600 1.6rem 'inter';
+				// line-height: 22px;
+				// margin: 0 0 0 60px;
+			}
+	
+			.col1, .col2{
+				float: none;
+				width: 100%;
+				position: relative;
+	
+				// img{
+				// 	width: 100%;
+				// 	max-width: 630px;
+				// }
+			}
+	
+			.plus{
+				display: none;
+			}
+	
+			a.gradient-gold{
+				// display: inline-block;
+				// padding: 14px 20px;
+				font: 700 2rem 'Rajdhani';
+				// text-transform: uppercase;
+				// color: $gold;
+				// position: relative;
+				// line-height: 34px;
+				// background-color: #fff;
+				// border: none;
+				// border-left: solid 4px $gold;
+				// text-decoration: none;
+				// transition: all .2s;
+	
+				// &:hover{
+				// 	background-color: $gold;
+				// 	color: #fff;
+				// }
+	
+				// &::before, &::after{
+				// 	position: absolute;
+				// 	left: 0;
+				// 	content: ' ';
+				// 	display: block;
+				// 	height: 4px;
+				// 	width: 100%;
+				// 	background: linear-gradient(93.06deg, #CA992C 29.63%, rgba(202, 153, 44, 0) 88.33%);
+				// }
+				// &::before{
+				// 	top: 0px;
+				// }
+				// &::after{
+				// 	bottom: 0px;
+				// }
+			}
+	
+			.pannel1, .pannel2, .pannel3{
+				// background: url(img/process1-bg.png);
+				// background-size: cover;
+	
+				.col1, .col2{
+					width: 100%;
+					padding-top: 30px;
+					padding-left: 0;
+					float: none;
+
+					.number{
+						left: 0;
+					}
+	
+					a.gradient-gold{
+						left: 50%;
+						top: 50%;
+						transform: translateX(-50%) translateY(-50%);
+					}
+				}
+			}
+
+			.pannel1, .pannel3{
+				.col1{
+					padding-top: 10px;
+				}
+			}
+		}
+	}
+}

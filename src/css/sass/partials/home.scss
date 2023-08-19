@@ -1,0 +1,445 @@
+body.home{
+	section#slider{
+		padding: 0;
+		//margin-top: 10px;
+		position: relative;
+		width: 100%;
+		//min-height: 20vh;
+		//overflow: hidden;
+
+		.bx-wrapper{
+			//max-height: 100vh;
+			//overflow: hidden;
+			z-index: 1;
+		}
+
+		#image-slider{
+			img{
+				width: 100%;
+			}
+		}
+
+		#slider-nav{
+			@include ul-nav;
+			position: absolute;
+			bottom: 40px;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 100;
+
+			li{
+				font-size: 1px;
+				cursor: pointer;
+				background-color: #fff;
+				padding: 6px;
+				border-radius: 50%;
+				margin: 0 5px;
+				border: solid 1px $gold;
+
+				&.active, &:hover{
+					background-color: $gold;
+					border: solid 1px #fff;
+				}
+			}
+		}
+
+		#slider-text{
+			width: 100%;
+			z-index: 100;
+			position: absolute;
+			top: 0;
+			left: 0;
+			overflow: hidden;
+			
+			#text-items{
+				position: relative;
+				height: 500px;
+				right: 0;
+
+				div{
+					top: 80px;
+					max-width: 365px;
+					position: absolute;
+					text-transform: uppercase;
+					opacity: 0;
+					left: 80%;
+					transform: translateX(-40%);
+					transition: opacity .25s, transform 0s .5s;
+					
+					&.gold{
+						top: 40%;
+						left: 17%;
+						h2, p{
+							color: #fff;
+						}
+						h3, a{
+							color: $gold;
+						}
+					}
+					
+					&.active{
+						opacity: 1;
+						transition: opacity 1s .25s, transform .75s .25s;
+					}
+
+					h2{
+						font: 3rem 'rajdhani';
+						font-weight: 500;
+						text-transform: uppercase;
+						margin: 0;
+						padding: 0;
+					}
+					h3{
+						font: 6rem 'rajdhani';
+						font-weight: 700;
+						text-transform: uppercase;
+						margin: 0;
+						padding: 0;
+						white-space: nowrap;
+						line-height: 1em;
+					    margin-bottom: 10px;
+					}
+
+					p{
+						font: 1.4rem 'inter';
+						font-weight: 400;
+						margin: 0;
+						padding: 0;
+						line-height: 2.1rem;
+						text-transform: initial;
+					}
+
+					a{
+						display: inline-block;
+						font: 600 1.6rem 'rajdhani';
+						margin: 20px 0 0 0;
+						padding: 7px 10px;
+						border: solid 1px;
+						text-decoration: none;
+						transition: all .2s;
+
+						&:hover{
+							background-color: #fff;
+						}
+					}
+					sup{
+						font-size: .3em;
+						top: -1.8em;
+						margin-left: -0.6em;
+					}
+				}
+			}
+		}
+	}
+
+	section#intro{
+		background: url(img/about-bg.png);
+		padding: 50px;
+		text-align: center;
+
+		h1{
+			width: 70%;
+			color: #000;
+			font: 700 3.6rem 'rajdhani';
+			text-transform: uppercase;
+			padding: 0;
+			margin: 0 auto 15px auto;
+		}
+
+		p{
+			width: 50%;
+			max-width: 550px;
+			color: #000;
+			font: 400 1.8rem 'inter';
+			line-height: 160.023%;
+			letter-spacing: 0.9px;
+			padding: 0;
+			margin: 0 auto;
+		}
+	}
+
+	section#innovations{
+		padding: 50px 5%;
+		background-color: $innova-black;
+		@include clear;
+
+		.inner{
+			width: 100%;
+			max-width: 1220px;
+		}
+
+		h2{
+			color: #fff;
+			margin-bottom: 50px;
+		}
+
+		.pannel{
+			padding: 1rem;
+			position: relative;
+			padding: 4px;
+			margin-bottom: 25px;
+
+			&.lr{
+				background: linear-gradient(to right, #CA992C 2%, $innova-black 95%);
+			}
+			&.rl{
+				background: linear-gradient(to right, $innova-black 2%, #CA992C 95%);
+			}
+
+			.panne-inner{
+				background-color: $innova-black;
+				padding: 40px 30px;
+				@include clear;
+				
+				.col-text{
+					float: left;
+					width: 50%;
+					padding: 5% 11% 5% 5%;
+			
+					h3{
+						color: $gold;
+						font: 700 2.4rem 'rajdhani';
+						line-height: 28px;
+						margin: 0px;
+						padding: 0 0 7px 0;
+					}
+			
+					p{
+						color: #fff;
+						font: 400 1.6rem 'inter';
+						line-height: 22px;
+						margin: 0;
+						padding: 0;
+					}
+				}
+			
+				.col-img{
+					float: left;
+					width: 50%;
+					img{
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	section#news{
+		padding: 50px 5% 0; 
+		
+		.inner{
+			padding: 0 30px;
+			max-width: 1000px;
+
+			.news-items{
+				margin-top: 40px;
+				display: flex;
+				gap: 4%;
+
+				.divider{
+					width: 5px;
+					background: var(--linear-line, linear-gradient(116deg, #CA992C 0%, rgba(202, 153, 44, 0.00) 100%));
+				}
+
+				.news-item{
+					width: 50%;
+
+					h4{
+						font: 700 1.8rem 'inter';
+						padding: 0;
+						margin: 0 0 12px 0;
+					}
+					p{
+						font: 400 1.6rem 'inter';	
+						padding: 0;
+						margin: 0 0 25px 0;			
+					}
+					a.btn{
+						display: inline-block;
+						font: 600 1.6rem 'rajdhani';
+						margin: 0;
+						padding: 7px 15px;
+						border: solid 1px;
+						text-decoration: none;
+						transition: all .2s;
+
+						&:hover{
+							background-color: $gold;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media only screen and (max-width: 1200px){
+	body.home{
+		section#slider #slider-text{
+			#text-items{
+				div{
+					left: 75%;//
+					
+					&.gold{
+						top: 30%;//
+						left: 20%;//
+					}
+					
+					h2{
+						font-size: 2.5rem;
+					}
+					h3{
+						font-size: 5rem;
+					}
+
+					p{
+						font-size: 1.5rem;
+					}
+					sup{
+						font-size: .25em;
+						top: -2.5em;
+					}
+				}
+			}
+		}
+	}
+	
+	@media only screen and (max-width: 900px){
+		body.home{
+			section#intro{
+				padding: 30px;
+				
+				h1{
+					width: 80%;
+					font-size: 3rem;
+				}
+		
+				p{
+					width: 80%;
+					max-width: 700px;
+					font-size: 1.6rem;
+				}
+			}
+		
+			section#innovations{
+				.pannel{
+					&.rl{
+						.btn{
+							margin-bottom: 0;
+						}
+					}
+		
+					.panne-inner{
+						background-color: $innova-black;
+						padding: 40px 30px;
+						@include clear;
+						
+						.col-text{
+							float: none;
+							width: 100%;
+							padding: 2%;
+						}
+					
+						.col-img{
+							float: none;
+							width: 100%;
+							padding: 2%;
+						}
+					}
+				}
+			}
+
+			section#news{
+				.inner{
+					.news-items{
+						display: block;
+		
+						.divider{
+							height: 5px;
+							width: 100%;
+							margin: 30px 0;
+							background: var(--linear-line, linear-gradient(90deg, #CA992C 0%, rgba(202, 153, 44, 0.00) 100%));
+						}
+		
+						.news-item{
+							width: 100%;
+		
+							h4{
+								font: 700 1.8rem 'inter';
+								padding: 0;
+								margin: 0 0 12px 0;
+							}
+							p{
+								font: 400 1.6rem 'inter';	
+								padding: 0;
+								margin: 0 0 25px 0;			
+							}
+							a.btn{
+								display: inline-block;
+								font: 600 1.6rem 'rajdhani';
+								margin: 0;
+								padding: 7px 15px;
+								border: solid 1px;
+								text-decoration: none;
+								transition: all .2s;
+		
+								&:hover{
+									background-color: $gold;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width: 750px){
+		body.home{
+			section#slider #slider-text{
+				position: relative;
+				left: 0;
+				overflow: hidden;
+				
+				#text-items{
+					position: relative;
+					height: auto;
+					right: 0;
+	
+					div{
+						top: auto;
+						max-width: 100%;
+						position: relative;
+						left: initial;
+						transform: none;
+						padding: 30px 30px 80px 30px;
+						
+						&.gold{
+							top: auto;
+							left: initial;
+							h2, p, h3, a{
+								color: $text-color;
+							}
+						}
+	
+						h2{
+							font-size: 2.5rem;
+						}
+						h3{
+							font-size: 5rem;
+						}
+	
+						p{
+							font-size: 1.5rem;
+						}
+	
+						a{
+							font-size: 1.5rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}

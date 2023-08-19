@@ -1,0 +1,32 @@
+/**
+ * styles.scss
+ * ---
+ * Main `sass` file. Import here `sass` files
+ */
+
+// Modules
+@import "modules/variables";
+@import "modules/mixins";
+@import "modules/fonts";
+
+// Partials
+@import "partials/reset";
+@import "partials/wordpress";
+@import "partials/utils";
+@import "partials/wrapper";
+@import "partials/header";
+@import "partials/nav";
+@import "partials/sidebar";
+@import "partials/footer";
+@import "partials/print";
+
+
+@import "partials/home";
+@import "partials/process";
+@import "partials/about";
+@import "partials/contact";
+@import "partials/innovation-category";
+@import "partials/innovation";
+@import "partials/blog";
+@import "partials/resources";
+@import "partials/products";

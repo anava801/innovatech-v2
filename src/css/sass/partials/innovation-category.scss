@@ -1,0 +1,236 @@
+body.page-template-template-innovation-category{
+	sup{
+		vertical-align: revert;
+		font-size: 1rem;
+	}
+
+	section#heading{
+		.inner{
+			width: 100%;
+			max-width: 1156px;
+			margin: 0 auto;
+			padding: 45px 0 30px;
+			
+			h1{
+				float: left;
+				color: $innova-black;
+				font: 700 3.6rem 'Rajdhani';
+				line-height: 32px;
+				margin: 0;
+				padding: 0;
+				text-transform: uppercase;
+			}
+
+			ul{
+				float: right;
+				@include ul-inline;
+				margin-top: 10px;
+				li{
+					margin-left: 25px;
+					a{
+						color: $dark-gold;
+						font: 600 1.6rem 'Rajdhani';
+						text-decoration: none;
+
+						&:hover{
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	section.intro{
+		background-color: $soft-grey;
+
+		.inner{
+			max-width: 1156px;
+			padding: 40px 0;
+
+			.text{
+				max-width: 570px;
+				color: $innova-black;
+				font: 500 1.8rem 'Inter';
+			}
+		}
+	}
+
+	section.innovations{
+		.inner{
+			max-width: 1190px;
+
+			.innovation{
+				@include clear;
+				padding: 50px 0;
+				.img{
+					float: left;
+					width: 52%;
+					img{
+						width: 100%;
+					}
+				}
+				.text{
+					float: left;
+					margin-left: 5.7%;
+					width: 37%;
+
+					h3{
+						font: 700 2.4rem 'Rajdhani';
+						margin: 0 0 7px;
+						padding: 0;
+					}
+
+					P{
+						font: 400 1.6rem 'Inter';
+						margin: 0;
+						padding: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 900px){
+	body.page-template-template-innovation-category{
+		section#heading{
+			.inner{
+				// width: 100%;
+				// max-width: 1156px;
+				// margin: 0 auto;
+				// padding: 45px 0 30px;
+				
+				// h1{
+				// 	float: left;
+				// 	color: $innova-black;
+				// 	font: 700 3.6rem 'Rajdhani';
+				// 	line-height: 32px;
+				// 	margin: 0;
+				// 	padding: 0;
+				// 	text-transform: uppercase;
+				// }
+	
+				ul{
+					float: none;
+					clear: both;
+					padding-top: 10px;
+					li:first-child{
+						margin-left: 0;
+					}
+					// @include ul-inline;
+					// margin-top: 10px;
+					// li{
+					// 	margin-left: 25px;
+					// 	a{
+					// 		color: $dark-gold;
+					// 		font: 600 1.6rem 'Rajdhani';
+					// 		text-decoration: none;
+	
+					// 		&:hover{
+					// 			text-decoration: underline;
+					// 		}
+					// 	}
+					// }
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 700px){
+	body.page-template-template-innovation-category{
+		section#heading{
+			.inner{
+				// width: 100%;
+				// max-width: 1156px;
+				// margin: 0 auto;
+				// padding: 45px 0 30px;
+				
+				// h1{
+				// 	float: left;
+				// 	color: $innova-black;
+				// 	font: 700 3.6rem 'Rajdhani';
+				// 	line-height: 32px;
+				// 	margin: 0;
+				// 	padding: 0;
+				// 	text-transform: uppercase;
+				// }
+	
+				ul{
+					float: none;
+					clear: both;
+					padding-top: 10px;
+					li:first-child{
+						margin-left: 0;
+					}
+					// @include ul-inline;
+					// margin-top: 10px;
+					// li{
+					// 	margin-left: 25px;
+					// 	a{
+					// 		color: $dark-gold;
+					// 		font: 600 1.6rem 'Rajdhani';
+					// 		text-decoration: none;
+	
+					// 		&:hover{
+					// 			text-decoration: underline;
+					// 		}
+					// 	}
+					// }
+				}
+			}
+		}
+	
+		// section.intro{
+		// 	background-color: $soft-grey;
+	
+		// 	.inner{
+		// 		max-width: 1086px;
+		// 		padding: 40px 0;
+	
+		// 		.text{
+		// 			max-width: 550px;
+		// 			color: $innova-black;
+		// 			font: 500 1.8rem 'Inter';
+		// 		}
+		// 	}
+		// }
+	
+		section.innovations{
+			.inner{
+				// max-width: 1190px;
+	
+				.innovation{
+					// @include clear;
+					padding: 50px 0 20px;
+					.img{
+						float: none;
+						width: 100%;
+						// img{
+						// 	width: 100%;
+						// }
+					}
+					.text{
+						float: none;
+						margin-left: 0%;
+						margin-top: 20px;
+						width: 100%;
+	
+						// h3{
+						// 	font: 700 2.4rem 'Rajdhani';
+						// 	margin: 0 0 7px;
+						// 	padding: 0;
+						// }
+	
+						// P{
+						// 	font: 400 1.6rem 'Inter';
+						// 	margin: 0;
+						// 	padding: 0;
+						// }
+					}
+				}
+			}
+		}	
+	}
+}

@@ -1,0 +1,183 @@
+/**
+ * partials/footer
+ * ---
+ */
+
+
+.footer {
+	margin-top: auto;
+
+	background-color: $innova-black;
+	color: #fff;
+	padding: 30px 40px;
+
+	.copyright{
+		display: inline-block;
+		font: 400 1.6rem 'Rajdhani';
+		line-height: 1em;
+		text-transform: uppercase;
+		padding: 0;
+		margin: 0;
+	}
+
+	ul{
+		@include ul-nav;
+		display: inline-block;
+		margin-left: 25px;
+		li{
+			padding-left: 2px;
+		}
+	}
+
+	.left{
+		display: inline;
+	}
+
+	.newsletter{
+		min-width: 440px;
+		float: right;
+
+		.label{
+			display: inline;
+			float: left;
+			color: #FFF;
+			font: 600 1.6rem 'Rajdhani';
+			text-transform: uppercase;
+			position: relative;
+			margin-right: 20px;
+			&::after{
+				content: '';
+				display: block;
+				position: absolute;
+				height: 5px;
+				width: 100%;
+				margin: 3px 0 0px 0;
+				background: var(--linear-line, linear-gradient(90deg, #CA992C 0%, rgba(202, 153, 44, 0.00) 100%));
+			}
+		}
+		form{
+			display: inline;
+		}
+
+		.gform_wrapper{	
+			display: inline;
+			input.medium{
+				width: 200px;
+			}
+		}
+		.gform_body, .gform_footer{
+			display: inline;
+			width: auto;
+
+			li{
+				position: relative;
+			}
+		}
+		.gform_wrapper .top_label div.ginput_container{
+			display: inline;
+			width: auto;
+		}
+		.gform_wrapper .top_label .gfield_label{
+			display: none;
+		}
+		.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit]{
+			display: inline;
+		}
+		.gform_wrapper .gform_footer input[type=submit]{
+			padding: 5px 10px;
+			text-transform: uppercase;
+			color: $gold;
+			border: 1px solid;
+			text-align: center;
+			font: 600 1.6rem 'Rajdhani';
+			background-color: transparent;
+			cursor: pointer;
+		}
+
+		.gform_wrapper .top_label .gfield_label{
+			display: none;
+		}
+		.gform_wrapper ul.gform_fields{
+			display: inline;
+		}
+		.gform_wrapper ul.gform_fields li.gfield{
+			display: inline;
+		}
+
+		.gform_wrapper div.validation_error{
+			display: none;
+		}
+
+		.gform_wrapper li.gfield.gfield_error.gfield_contains_required div.gfield_description{
+			position: absolute;
+    		display: inline;
+			left: 0;
+			top: -35px;
+			color: #fff;
+		}
+
+	}
+}
+
+
+@media only screen and (max-width: 800px){
+	.footer {
+		padding: 20px;
+	
+		.left{
+			display: block;
+			margin: 0 auto 20px;
+			width: 260px;
+		}
+	
+		.newsletter{
+			margin: 0 auto;
+			width: 74%;
+			min-width: 280px;
+			float: none;
+			
+	
+			.label{
+				display: block;
+				float: none;
+				width: 100%;
+				margin: 0 auto;
+			}
+			form{
+				display: block;
+				width: 100%;
+			}
+	
+			.gform_wrapper{	
+				display: block;
+				input.medium{
+					width: 75%;
+				}
+			}
+			.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit]{
+				display: inline;
+				box-sizing: border-box;
+				width: auto;
+			}
+	
+			.gform_wrapper li.gfield.gfield_error.gfield_contains_required div.gfield_description{
+				top: 20px;
+			}
+	
+		}
+	}
+}
+
+@media only screen and (max-width: 641px){
+	.footer {
+		.newsletter{
+			.gform_wrapper{	
+				display: block;
+				input.medium{
+					width: 60%;
+				}
+			}
+	
+		}
+	}
+}
